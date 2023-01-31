@@ -1,0 +1,42 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Manager
+{
+	public class Formatter
+	{
+		public static string ParseName(string winLogonName)
+		{
+			string[] parts = new string[] { };
+
+			if (winLogonName.Contains("@"))
+			{
+				///UPN format
+				parts = winLogonName.Split('@');
+				return parts[0];
+			}
+			else if (winLogonName.Contains("\\"))
+			{
+				/// SPN format
+				parts = winLogonName.Split('\\');
+				return parts[1];
+			}
+			else
+			{
+				return winLogonName;
+			}
+		}
+
+		public static string GetName(string certificate)
+		{
+			string[] parts = certificate.Split(',');
+			string[] names = parts[0].Split('=');
+
+			return names[1];
+		}
+
+	}
+}

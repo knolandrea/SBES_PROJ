@@ -1,0 +1,9 @@
+C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\Manager\bin\Debug\Manager.dll
+C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\Manager\bin\Debug\Manager.pdb
+C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\Manager\bin\Debug\Contracts.dll
+C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\Manager\bin\Debug\Contracts.pdb
+C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\Manager\obj\Debug\Manager.csprojAssemblyReference.cache
+C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\Manager\obj\Debug\Manager.csproj.CoreCompileInputs.cache
+C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\Manager\obj\Debug\Manager.csproj.CopyComplete
+C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\Manager\obj\Debug\Manager.dll
+C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\Manager\obj\Debug\Manager.pdb
