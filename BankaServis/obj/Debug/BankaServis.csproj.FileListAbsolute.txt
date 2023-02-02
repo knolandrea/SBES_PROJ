@@ -10,3 +10,15 @@ C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\BankaServis\obj\Debug\BankaSer
 C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\BankaServis\obj\Debug\BankaServis.csproj.CopyComplete
 C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\BankaServis\obj\Debug\BankaServis.exe
 C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\BankaServis\obj\Debug\BankaServis.pdb
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\BankaServis\bin\Debug\BankaServis.exe.config
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\BankaServis\bin\Debug\BankaServis.exe
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\BankaServis\bin\Debug\BankaServis.pdb
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\BankaServis\bin\Debug\Contracts.dll
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\BankaServis\bin\Debug\Manager.dll
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\BankaServis\bin\Debug\Contracts.pdb
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\BankaServis\bin\Debug\Manager.pdb
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\BankaServis\obj\Debug\BankaServis.csprojAssemblyReference.cache
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\BankaServis\obj\Debug\BankaServis.csproj.CoreCompileInputs.cache
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\BankaServis\obj\Debug\BankaServis.csproj.CopyComplete
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\BankaServis\obj\Debug\BankaServis.exe
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\BankaServis\obj\Debug\BankaServis.pdb

@@ -10,3 +10,15 @@ C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\Client\obj\Debug\Client.csproj
 C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\Client\obj\Debug\Client.csproj.CopyComplete
 C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\Client\obj\Debug\Client.exe
 C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\Client\obj\Debug\Client.pdb
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Client\bin\Debug\Client.exe.config
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Client\bin\Debug\Client.exe
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Client\bin\Debug\Client.pdb
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Client\bin\Debug\Contracts.dll
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Client\bin\Debug\Manager.dll
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Client\bin\Debug\Contracts.pdb
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Client\bin\Debug\Manager.pdb
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Client\obj\Debug\Client.csprojAssemblyReference.cache
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Client\obj\Debug\Client.csproj.CopyComplete
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Client\obj\Debug\Client.exe
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Client\obj\Debug\Client.pdb

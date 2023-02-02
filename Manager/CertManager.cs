@@ -16,28 +16,21 @@ namespace Manager
 			store.Open(OpenFlags.ReadOnly);
 
 			X509Certificate2Collection certCollection = store.Certificates.Find(X509FindType.FindBySubjectName, subjectName, true);
-			X509Certificate2 certificate = null;
+			
 
-			foreach (X509Certificate2 cert in certCollection)
+			foreach (X509Certificate2 c in certCollection)
 			{
-				if (cert.SubjectName.Name.Equals(string.Format("CN={0}", subjectName)))
-				{
-					return cert;
-				}
+                string[] name = c.SubjectName.Name.Split(',');
+                if (name[0].Equals(string.Format("CN={0}", subjectName)))
+                {
+                    return c;
+                }
 
-			}
+            }
 
 			return null;
 		}
 
-		public static X509Certificate2 GetCertificateFromFile(string fileName)
-		{
-			X509Certificate2 certificate = new X509Certificate2();
-
-			byte[] niz = File.ReadAllBytes(fileName + ".cer");
-			certificate.Import(niz);
-
-			return certificate;
-		}
+	
 	}
 }

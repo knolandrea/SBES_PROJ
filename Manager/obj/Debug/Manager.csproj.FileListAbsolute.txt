@@ -7,3 +7,12 @@ C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\Manager\obj\Debug\Manager.cspr
 C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\Manager\obj\Debug\Manager.csproj.CopyComplete
 C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\Manager\obj\Debug\Manager.dll
 C:\Users\Radula\Desktop\SBES PROJEKAT\BankaSistem\Manager\obj\Debug\Manager.pdb
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Manager\bin\Debug\Manager.dll
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Manager\bin\Debug\Manager.pdb
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Manager\bin\Debug\Contracts.dll
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Manager\bin\Debug\Contracts.pdb
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Manager\obj\Debug\Manager.csprojAssemblyReference.cache
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Manager\obj\Debug\Manager.csproj.CoreCompileInputs.cache
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Manager\obj\Debug\Manager.csproj.CopyComplete
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Manager\obj\Debug\Manager.dll
+C:\Users\Ruzica\Desktop\SBES PROJEKAT\SBES_PROJ\Manager\obj\Debug\Manager.pdb
