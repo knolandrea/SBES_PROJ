@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfRacun xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Racun>
+    <brojRacuna>4311302046902152</brojRacuna>
+    <stanje>0</stanje>
+    <dozvoljenMinus>1000</dozvoljenMinus>
+    <blokiran>0</blokiran>
+    <poslednjaTransakcija>0001-01-01T00:00:00</poslednjaTransakcija>
+    <korisnickoIme>ana</korisnickoIme>
+  </Racun>
+  <Racun>
+    <brojRacuna>7854778126280186</brojRacuna>
+    <stanje>2400</stanje>
+    <dozvoljenMinus>1000</dozvoljenMinus>
+    <blokiran>0</blokiran>
+    <poslednjaTransakcija>0001-01-01T00:00:00</poslednjaTransakcija>
+    <korisnickoIme>sluzbenik</korisnickoIme>
+  </Racun>
+  <Racun>
+    <brojRacuna>7301367289992686</brojRacuna>
+    <stanje>450</stanje>
+    <dozvoljenMinus>1000</dozvoljenMinus>
+    <blokiran>0</blokiran>
+    <poslednjaTransakcija>0001-01-01T00:00:00</poslednjaTransakcija>
+    <korisnickoIme>korisnik</korisnickoIme>
+  </Racun>
+  <Racun>
+    <brojRacuna>5389629829390734</brojRacuna>
+    <stanje>0</stanje>
+    <dozvoljenMinus>1000</dozvoljenMinus>
+    <blokiran>0</blokiran>
+    <poslednjaTransakcija>0001-01-01T00:00:00</poslednjaTransakcija>
+    <korisnickoIme>andrea</korisnickoIme>
+  </Racun>
+</ArrayOfRacun>

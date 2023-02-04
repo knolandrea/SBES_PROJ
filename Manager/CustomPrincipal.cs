@@ -25,6 +25,7 @@ namespace Manager
 
         public bool IsInRole(string role)
         {
+
             Type x509IdentityType = identity.GetType();
 
             // The certificate is stored inside a private field of this class
@@ -32,10 +33,11 @@ namespace Manager
 
             X509Certificate2 certificate = (X509Certificate2)certificateField.GetValue(identity);
 
-            var subject = certificate.SubjectName.Name;
-            var ou = GetOU(subject);
-
-            if (role.Equals(ou))
+            string name = certificate.SubjectName.Name;
+            string[] clientName = name.Split(';');
+            string[] parts = clientName[0].Split(',');
+            string[] roleName = parts[1].Split('=');
+            if (role.Equals(roleName[1]))
             {
                 return true;
             }
@@ -43,20 +45,5 @@ namespace Manager
             return false;
         }
 
-
-
-        //"CN=xy, OU=abc" => vraca string pocevsi od 4.karaktera u "OU=abc"
-        static string GetOU(string subject)
-        {
-            string[] fields = subject.Split(',');
-            foreach (string field in fields)
-            {
-                if (field.StartsWith("OU="))
-                {
-                    return field.Substring(3);
-                }
-            }
-            return null;
-        }
     }
 }

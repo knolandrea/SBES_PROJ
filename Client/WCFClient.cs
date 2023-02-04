@@ -31,34 +31,82 @@ namespace Client
 
         public bool Isplata(double suma)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return factory.Isplata(suma);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return false;
         }
 
         public bool Opomena(string username)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return factory.Opomena(username);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return false;
         }
 
         public bool OtvoriRacun(string username)
         {
-            throw new NotImplementedException();
+            bool retVal = false;
+
+            try
+            {
+                retVal = factory.OtvoriRacun(username);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return retVal;
+         
         }
 
         public double ProveriStanje()
         {
-            Console.WriteLine("ovo je samo test\n");
+            try
+            {
+                return factory.ProveriStanje();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return 0;
-            // throw new NotImplementedException();
         }
 
         public void Uplata(double suma)
         {
-            throw new NotImplementedException();
+            try
+            {
+                factory.Uplata(suma);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         public bool ZatvoriRacun(string username)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return factory.ZatvoriRacun(username);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return false;
         }
     }
 }

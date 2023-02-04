@@ -22,18 +22,18 @@ namespace Client
 
 			Console.WriteLine("Trenutni korisnik:  " + WindowsIdentity.GetCurrent().Name);
 
-			//string cltCertCN = Formatter.ParseName(WindowsIdentity.GetCurrent().Name);
-			string cltCertCN = "sluzbenik";
+			string cltCertCN = Formatter.ParseName(WindowsIdentity.GetCurrent().Name);
+			//string cltCertCN = "sluzbenik";
 			string srvCertCN = "bankacert";
 
 			/// Use CertManager class to obtain the certificate based on the "srvCertCN" representing the expected service identity.
 			X509Certificate2 srvCert = CertManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, srvCertCN);
 
-			EndpointAddress endpointAddress = new EndpointAddress(new Uri(address), new X509CertificateEndpointIdentity(srvCert));
+			EndpointAddress endpointAddress = new EndpointAddress(new Uri(address),
+									  new X509CertificateEndpointIdentity(srvCert));
 
 
-
-			using (WCFClient proxy = new WCFClient(binding, address))
+			using (WCFClient proxy = new WCFClient(binding, endpointAddress))
 			{
 				proxy.Credentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.Custom;
 				proxy.Credentials.ServiceCertificate.Authentication.CustomCertificateValidator = new ServerCertValidator();

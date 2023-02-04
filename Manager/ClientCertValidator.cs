@@ -13,14 +13,18 @@ namespace Manager
 	{
 		public override void Validate(X509Certificate2 certificate)
 		{
-			//X509Certificate2 srvCert = CertManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, Formatter.ParseName(WindowsIdentity.GetCurrent().Name));
-			X509Certificate2 srvCert = CertManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, "bankacert");
+			// *** user -> banka, CN= bankacert
+			//string ime = Formatter.ParseName(WindowsIdentity.GetCurrent().Name) + "cert";
+			string ime = "bankacert";
+			X509Certificate2 srvCert = CertManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, ime);
 
-			if (certificate.Subject.Equals(certificate.Issuer) && (!certificate.Issuer.Equals(srvCert.Issuer)))
+			//klijentov sertifikat je validan ako mu je issuer isti kao servisov
+			if (certificate.Issuer != srvCert.Issuer)
 			{
-				throw new Exception("Certificate is not valid.");
+				Audit.AuthenticationFailure(certificate.SubjectName.Name);
+				throw new Exception("Client cert is not valid. Different issuers\n");
 			}
-
+			Audit.AuthenticationSuccess(certificate.SubjectName.Name);
 		}
 	}
 }

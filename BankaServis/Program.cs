@@ -2,10 +2,12 @@
 using Manager;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Policy;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Security.Principal;
 using System.ServiceModel;
+using System.ServiceModel.Description;
 using System.ServiceModel.Security;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +24,8 @@ namespace BankaServis
 			string address = "net.tcp://localhost:9999/WCFServis";
 			ServiceHost host = new ServiceHost(typeof(WCFServis));
 
-			//string srvCertCN = Formatter.ParseName(WindowsIdentity.GetCurrent().Name);
+			// *** username: banka, cn = bankacert
+			//string srvCertCN = Formatter.ParseName(WindowsIdentity.GetCurrent().Name)+ "cert";
 			string srvCertCN = "bankacert";
 
 			//authentification
@@ -32,9 +35,22 @@ namespace BankaServis
 			host.Credentials.ClientCertificate.Authentication.CustomCertificateValidator = new ClientCertValidator();
 			host.Credentials.ClientCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;
 
+			//autorizacija
+			host.Authorization.PrincipalPermissionMode = PrincipalPermissionMode.Custom;
+			List<IAuthorizationPolicy> policies = new List<IAuthorizationPolicy>();
+			policies.Add(new CustomAutorizacija());
+			host.Authorization.ExternalAuthorizationPolicies = policies.AsReadOnly();
+
+			//audit
+			ServiceSecurityAuditBehavior newAudit = new ServiceSecurityAuditBehavior();
+			newAudit.AuditLogLocation = AuditLogLocation.Application;
+			newAudit.ServiceAuthorizationAuditLevel = AuditLevel.SuccessOrFailure;
+			host.Description.Behaviors.Remove<ServiceSecurityAuditBehavior>();
+			host.Description.Behaviors.Add(newAudit);
 
 			try
 			{
+				DBOperations.NapraviBazu();
 				host.Open();
 				Console.WriteLine("WCFService is started.\nPress <enter> to stop ...");
 				Console.ReadLine();
